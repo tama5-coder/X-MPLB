@@ -4,21 +4,14 @@
     <meta charset="UTF-8">
     <title>X MPLB - Super Mario Edition</title>
     <style>
-        html { scroll-behavior: smooth; }
-        
-        /* Tema Background Langit Mario Bros */
         body { 
             font-family: 'Courier New', Courier, monospace, sans-serif; 
             background: linear-gradient(to bottom, #5c94fc, #b8c4ff); 
             background-attachment: fixed;
-            margin: 0; 
-            padding: 0; 
-            color: #333; 
+            margin: 0; padding: 0; color: #333; 
         }
-        
-        /* Navbar gaya retro/game */
         nav { 
-            background-color: #e52521; /* Merah Khas Mario */
+            background-color: #e52521; 
             padding: 15px; 
             display: flex; 
             justify-content: center; 
@@ -31,7 +24,7 @@
             border-bottom: 4px solid #000;
         }
         nav a { 
-            color: #f8d000; /* Kuning koin Mario */
+            color: #f8d000; 
             text-decoration: none; 
             font-weight: bold; 
             font-size: 1.1rem; 
@@ -47,39 +40,26 @@
         .container { 
             max-width: 950px; 
             margin: 30px auto; 
-            background: #fff8eb; /* Warna krem kertas klasik */
+            background: #fff8eb; 
             padding: 20px 40px; 
             border-radius: 15px; 
             box-shadow: 0 8px 25px rgba(0,0,0,0.4); 
             border: 4px solid #e52521;
         }
         
-        .section { padding-top: 60px; margin-bottom: 40px; text-align: center; border-bottom: 3px dashed #f8d000; padding-bottom: 40px; position: relative; }
+        .section { padding-top: 40px; margin-bottom: 40px; text-align: center; border-bottom: 3px dashed #f8d000; padding-bottom: 40px; }
         
-        /* Logo Kelas diperbesar jadi 220px */
         .logo-img-container { 
-            width: 220px; 
-            height: 220px; 
-            background: #e52521; 
-            border-radius: 50%; 
-            margin: 0 auto 20px; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            border: 5px solid #f8d000; 
-            overflow: hidden; 
-            box-shadow: 0 6px 15px rgba(0,0,0,0.25); 
+            width: 220px; height: 220px; background: #e52521; border-radius: 50%; 
+            margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; 
+            border: 5px solid #f8d000; overflow: hidden; box-shadow: 0 6px 15px rgba(0,0,0,0.25); 
         }
         .logo-img-container img { width: 100%; height: 100%; object-fit: cover; }
 
         h1 { color: #e52521; text-shadow: 2px 2px #f8d000; font-size: 2.5rem; margin-bottom: 10px; }
         
-        /* Ukuran Dekorasi Foto/Logo Mario diperbesar jadi 200px */
         .mario-decor { 
-            width: 200px; 
-            height: auto; 
-            margin: 20px auto; 
-            display: block; 
+            width: 200px; height: auto; margin: 20px auto; display: block; 
             animation: bounce 2s infinite; 
         }
         @keyframes bounce {
@@ -99,21 +79,42 @@
 
         .grid-anggota { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px; margin-top: 15px; text-align: left; }
 
+        /* Style Canvas Menyesuaikan untuk Foto Kebersamaan */
+        .card-kebersamaan { 
+            background: #ffe6cc; 
+            padding: 12px; 
+            border-radius: 12px; 
+            border: 3px solid #e52521; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card-kebersamaan img { 
+            width: 100%; 
+            height: auto; 
+            display: block; 
+            object-fit: contain; 
+            border-radius: 8px; 
+            border: 2px solid #f8d000; 
+            background: #000; 
+        }
+
         .dev-badge { background: #000; color: #f8d000; padding: 10px 20px; border-radius: 20px; display: inline-block; margin: 5px; font-size: 1rem; border: 2px solid #e52521; font-weight: bold; }
     </style>
 </head>
 <body>
 
 <nav>
-    <a href="#home">🏠 Home</a>
-    <a href="#anggota">⭐ Struktur & Anggota</a>
-    <a href="#dev">🎮 Di Balik Layar</a>
+    <a href="index.html" style="background: #f8d000; color: #000;">🏠 Home</a>
+    <a href="girl.html">🌸 GIRL</a>
+    <a href="boy.html">🧢 BOY</a>
 </nav>
 
 <div class="container">
 
     <!-- HOME SECTION -->
-    <div id="home" class="section">
+    <div class="section">
         <img src="MARIO 4.png" alt="Mario" class="mario-decor" onerror="this.style.display='none'">
         
         <div class="logo-img-container">
@@ -129,7 +130,7 @@
     </div>
 
     <!-- STRUKTUR & ANGGOTA KELAS SECTION -->
-    <div id="anggota" class="section">
+    <div class="section">
         <h1>🍄 Struktur & Anggota Kelas 🍄</h1>
         
         <img src="mario 6.png" alt="Mario" class="mario-decor" style="width: 220px;" onerror="this.style.display='none'">
@@ -178,7 +179,7 @@
 
         <img src="MARIO 5.png" alt="Mario" class="mario-decor" style="width: 220px;" onerror="this.style.display='none'">
 
-        <!-- Daftar Anggota -->
+        <!-- Daftar Anggota Lengkap -->
         <div class="grid-anggota">
             <div class="card-anggota"><img src="zahra.jpeg"><h4>Zahra Rahmadhani</h4><p>Anggota</p></div>
             <div class="card-anggota"><img src="alya.jpeg"><h4>Aliya Felisha</h4><p>Anggota</p></div>
@@ -203,10 +204,33 @@
             <div class="card-anggota"><img src="fotbar.jpg"><h4>Fellya Azzahra</h4><p>Anggota</p></div>
             <div class="card-anggota"><img src="helwa.jpeg"><h4>Helwa Hustu Waniah</h4><p>Anggota</p></div>
         </div>
+
+        <!-- 4 FOTO KEBERSAMAAN CAMPURAN -->
+        <div class="sub-heading" style="margin-top: 50px;">FOTO KEBERSAMAAN KELAS</div>
+        <p style="font-weight: bold; color: #555; margin-bottom: 20px;">Momen kebersamaan seru anak-anak X MPLB!</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; text-align: center;">
+            <div class="card-kebersamaan">
+                <img src="fotbar1.jpg" alt="Campuran 1" onerror="this.src='fotbar.jpg'">
+                <p style="margin: 10px 0 0; font-size: 0.9rem; font-weight: bold; color: #b22222;">Momen 1</p>
+            </div>
+            <div class="card-kebersamaan">
+                <img src="fotbar2.jpg" alt="Campuran 2" onerror="this.src='fotbar.jpg'">
+                <p style="margin: 10px 0 0; font-size: 0.9rem; font-weight: bold; color: #b22222;">Momen 2</p>
+            </div>
+            <div class="card-kebersamaan">
+                <img src="fotbar3.jpg" alt="Campuran 3" onerror="this.src='fotbar.jpg'">
+                <p style="margin: 10px 0 0; font-size: 0.9rem; font-weight: bold; color: #b22222;">Momen 3</p>
+            </div>
+            <div class="card-kebersamaan">
+                <img src="fotbar4.jpg" alt="Campuran 4" onerror="this.src='fotbar.jpg'">
+                <p style="margin: 10px 0 0; font-size: 0.9rem; font-weight: bold; color: #b22222;">Momen 4</p>
+            </div>
+        </div>
     </div>
 
     <!-- SOSOK DI BALIK LAYAR SECTION -->
-    <div id="dev" class="section" style="border-bottom: none;">
+    <div class="section" style="border-bottom: none;">
         <img src="mario.png" alt="Mario" class="mario-decor" style="width: 200px;" onerror="this.style.display='none'">
         
         <h1>✨ Sosok Di Balik Layar ✨</h1>
